@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <title>Elig Adm - Sistemas</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+  <meta name="author" content="Rick Costa - Elign Adm">
+  <meta name="revised" content="Elig Adm, 24/09/2021">
+  <meta http-equiv="refresh" content="10">
+  <meta name="description" content="Página de Vendas Elig Adm">
+  <meta name="keywords" content="elig-adm, sistemas, administração, sbc, são bernardo do campo, gestão, planos-de-crescimento">
+  <meta name="robots" content="index">
+  <!-- BOOTSTRAP 4.4.1 - BY RK -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: Roboto;
+
+      }
+      .btnComercial01 {
+        padding: 10px;
+        font-size: 12pt;
+        width: 45%;
+      }
+      .bgNav {
+        background-color: white;
+      }
+      .bgCont01 {
+        background-color: #F7F7F7;
+      }
+      .bgCont02 {
+        background-color: white;
+        padding-top: 30px;
+      }
+      .bgCont02 h4 {
+        font-size: 10pt;
+      }
+      .cardCont2 {
+        font-weight: 700;
+        font-size: 18pt !important;
+        text-align: left;
+        padding: 15px 10px;
+      }
+      .cardText {
+        font-weight: 300;
+        padding-top: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 0px;
+
+      }
+      .bgCardgroup1 {
+        background-color: #3949A0;
+      }
+      .imgCard {
+        overflow: hidden;
+      }
+      .imgScaleCard img {
+        -webkit-transition: -webkit-transform .5s ease;
+        transition: transform .5s ease;
+      }
+      .imgScaleCard img:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+      .etapas3 {
+        border: solid 1px #DEDEDE;
+        color: #303030;
+        padding: 30px 10px;
+        -webkit-transition: -webkit-transform .3s ease;
+        transition: transform .3s ease;
+      }
+      .etapas3:hover {
+        border-bottom: 3px solid #3949A0;
+        -webkit-transform: scale(1.03);
+        transform: scale(1.03);
+
+      }
+      .etapas3 li {
+        font-size: 11pt;
+      }
+      .cardCont3 {
+        font-weight: 400;
+        font-size: 15pt !important;
+        text-align: center;
+        padding: 15px 5px;
+      }
+
+      
+
+      .cardsCont04 h4 {
+        padding: 20px 0;
+        font-size: 15pt;
+
+      }
+      .cardTitle {
+        font-size: 15pt !important;
+      }
+
+      .scaleCardCont04 {
+        -webkit-transition: -webkit-transform .5s ease;
+        transition: transform .5s ease;
+      }
+      .scaleCardCont04:hover {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+        background-color: #2B3778 !important;
+      }
+      .bgCont04 {
+        background-color: rgba(245,245,245,1);
+        padding-top: 50px;
+      }
+      .solucoesCont05 {
+        display: inline-block;
+        text-decoration: none;
+        list-style: none;
+      }
+      .itemCont01 {
+        color: #F7F7F7 !important;
+        padding: 10px 0;
+      }
+      .cont06 {
+        background-color: white;
+        padding: 0px;
+      }
+      .cont06 li {
+        background-color: white;
+        margin: 0 40px;
+      }
+      .h4Cont06 {
+        background-color: white;
+        margin-bottom: 0;
+        font-weight: 600;
+        border-top: solid 3px #3949A0;
+        color: #3949A0;
+      }
+      .pCont06 {
+        background-color: white;
+        margin-top: 0;
+      
+        color: #3949A0;
+        padding-bottom: 10px;
+      }
+      .cont07 {
+        background-color: #3949A0;
+        padding: 50px 0;
+        color: white;
+      }
+      .cont08 {
+        padding-top: 10px;
+        background-color: #3949A0;
+        color: white;
+      }
+      .listStyle {
+        list-style: none ;
+      }
+      .scaleCardCont08 {
+        -webkit-transition: -webkit-transform .2s ease;
+        transition: transform .2s ease;
+      }
+      .scaleCardCont08:hover {
+        -webkit-transform: scale(1.03);
+        transform: scale(1.03);
+      }
+      .contForm {
+        background-color: #3949A0;
+        color: white;
+      }
+      footer {
+        background-color: #3949A0;
+        color: white;
+      }
+      .backtotop {
+        color: white;
+        background-color: #3949A0;
+        position: fixed;
+        bottom: 3%;
+        right: 3%;
+        cursor: pointer;
+        padding: 10px 15px;
+        border-radius: 50px;
+      }
+    </style>
+</head>   
+  <body>
+   <nav id="top"class="navbar navbar-expand-lg navbar-light bgNav">
+    <div class="container">
+   <a class="navbar-brand" href="#">
+     <img src="images/logo_dark.png" width="150" class="d-inline-block align-top">
+   </a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+         <li class="nav-item active">
+            <a class="nav-link" href="index.html">INÍCIO <span class="sr-only">(current)</span></a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="#sobre">SOBRE</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="#beneficios">BENEFÍCIOS</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="#novidades">NOVIDADES</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="#recursos">RECURSOS</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="#sistema">O SISTEMA</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="#contato">CONTATO</a>
+         </li>
+      </ul>
+   </div>
+ </div>
+</nav>
+
+<!-- CONTAINER 01 -->
+<div class="container-fluid bgCont01">
+
+  <div class="container text-center" style="padding: 50px 0;">
+    <div class="row">
+      <div class="col-sm-6 w3-animate-left">
+        <h1 style="font-weight: 400;" class="text-left">EVOLUA SUA EMPRESA <strong>TENHA CONTROLE DE <DEL></DEL><br />TUDO</strong></h1>
+        <br />
+          <p class="text-left">Por um valor acessível mensal você empresário terá o controle de toda sua empresa.</p>
+          <br />
+          <div class="container-fluid">
+            <button type="button" class="btn btn-primary">QUERO UM SISTEMA<i class="fa fa-shopping-cart ml-3 fa-sm"></i></button>
+            <button type="button" class="btn btn-secondary">FALAR COM COMERCIAL<i class="fa fa-commenting ml-3 fa-sm"></i></button>
+          </div>
+      </div>
+      <div class="col-sm-6" style="">
+        <img class="img-fluid float-right w3-animate-bottom" src="images/mkp01.jfif">
+      </div>
+    </div>
+  </div>
+
+</div>
+<br />
+<br />
+<!-- CONTAINER 02 -->
+<div id="sobre" class="container-fluid bgCont02 w3-animate-top" style="padding: 0;">
+  <div class="container text-center" style="padding: 0;">
+    <h4>SOBRE O SISTEMA</h4>
+    <h1 style="font-weight: 400;">NÓS <strong>INOVAMOS</strong></h1>
+    <p>O sistema de ordem de serviços, trás novidades e facilidade para que não precise ter dor de cabeça mas sim<br /> solução para gerenciar a sua empresa.</p>
+    <br />
+
+    <div class="container" style="padding: 0;">
+      <div class="card-group imgScaleCard">
+        <div class="card" style="background-color: #3949A0;border: none;color: white;margin: 0;">
+          <div class="imgCard">
+            <img class="card-img-top img-fluid" src="images/section1.jpeg">
+          </div>
+            <div class="card-body">
+              <h4 class="card-title cardCont2">INOVADOR</h4>
+              <p class="card-text text-left cardText">O sistema ajudará a entender o problema e trazer solução para sua empresa.</p>
+            </div>
+        </div>
+        <div class="card" style="background-color: #6639B6;border: none;color: white;margin: 0;">
+          <div class="imgCard">
+            <img class="card-img-top img-fluid" src="images/section2.jpeg">
+          </div>
+            <div class="card-body ">
+              <h4 class="card-title cardCont2">FÁCIL</h4>
+              <p class="card-text text-left cardText">Não precisa baixar nada no celular, apenas acessa com login e senha e pronto, sua empresa na palma da mão.</p>
+            </div>
+        </div>
+        <div class="card" style="background-color: #E81C62;border: none;color: white;margin: 0;">
+          <div class="imgCard">
+            <img class="card-img-top img-fluid" src="images/section3.jpeg">
+          </div>
+            <div class="card-body ">
+              <h4 class="card-title cardCont2">MODERNO</h4>
+              <p class="card-text text-left cardText">Gráficos para analisar, relatórios  customizados e ordens de serviços com opção de enviar por e-mail ou pdf.</p>
+            </div>
+        </div>
+        <div class="card" style="background-color: #9A69CB;border: none;color: white;margin: 0;">
+          <div class="imgCard">
+            <img class="card-img-top img-fluid" src="images/section4.jpeg">
+          </div>
+            <div class="card-body ">
+              <h4 class="card-title cardCont2">SIMPLES</h4>
+              <p class="card-text text-left cardText">Tudo o que precisa para a gestão fica no sistema, e ainda tem a opção de analisar o crescimento  da empresa.</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br />
+<br />
+<br />
+<!-- CONTAINER 03 -->
+
+<div id="beneficios" class="container-fluid bgCont02 text-uppercase">
+  <div class="container text-center">
+    <h4>BENEFÍCIOS</h4>
+    <h1 style="font-weight: 400;">GEstãO -<strong> FÁCIL EM 3 ETAPAS</strong></h1>
+    <br />
+    <div class="card-group">
+      <div class="card etapas3">
+        <i class="fa fa-search fa-2x" style="color: #3949A0;"></i>
+            <div class="card-body">
+              <h4 class="card-title cardCont3">ANALISAR</h4>
+              <p class="card-text text-center cardText">Visualize como anda a saúde financeira da sua empresa.</p>
+              <br />
+              <ul class="list-group list-group-flush spanGreen">
+                <li class="list-group-item" style="border-bottom: solid 1px silver;">Dashbord</li>
+                <li class="list-group-item" style="border-bottom: solid 1px silver;">Gráficos</li>
+                <li class="list-group-item" style="border-bottom: solid 1px silver;">Agenda de Serviços</li>
+              </ul>
+            </div>
+        </div>
+        <div class="card etapas3">
+        <i class="fa fa-users fa-2x" style="color: #3949A0;"></i>
+            <div class="card-body">
+              <h4 class="card-title cardCont3">Controle de Cliente</h4>
+              <p class="card-text text-center cardText">Todas as ordens de serviço e dados do cliente em um só lugar.</p>
+              <br />
+              <ul class="list-group list-group-flush spanGreen">
+                <li class="list-group-item" style="border-bottom: solid 1px silver;">CADASTRO DE CLIENTES</li>
+                <li class="list-group-item" style="border-bottom: solid 1px silver;">ORDEM DE SERVIÇO PERSONALIZADA</li>
+                <li class="list-group-item" style="border-bottom: solid 1px silver;">RELATóRIO DE TODOS OS CLIENTES</li>
+                <li class="list-group-item" style="border-bottom: solid 1px silver;">CONTROLE DE PAGAMENTO</li>
+              </ul>
+            </div>
+        </div>
+        <div class="card etapas3">
+        <i class="fa fa-layer-group fa-2x" style="color: #3949A0;"></i>
+            <div class="card-body">
+              <h4 class="card-title cardCont3">RELATÓRIOS</h4>
+              <p class="card-text text-center cardText">Visualiza o que entra e o que sai da sua empresa</p>
+              <br />
+              <ul class="list-group list-group-flush spanGreen">
+                <li class="list-group-item" style="border-bottom: solid 1px silver;">RELATÓRIO DE VENDAS</li>
+                <li class="list-group-item" style="border-bottom: solid 1px silver;">RELATÓRIO DE SAÍDAS</li>
+                <li class="list-group-item" style="border-bottom: solid 1px silver;">RELATÓRIO DE PRODUTOS/SERVIÇOS</li>
+                <li class="list-group-item" style="border-bottom: solid 1px silver;">RELATÓRIO FINANCEIRO</li>
+              </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+<br />
+<br />
+<br />
+<!-- CONTAINER 04 -->
+<div id="novidades" class="container-fluid text-center bgCont04">
+  <div class="container">
+    <h4 class="text-uppercase">O QUE HÁ DE NOVO</h4>
+    <h1 style="font-weight: 400;">OPÇÃO DE<strong> GRÁFICOS E PERSONALIZAÇÃO</strong></h1>
+    
+  <br />
+  <div class="card-group">
+    <div class="card scaleCardCont04" style="background-color: #3949A0;border: none; color: white;margin: 10px;">
+      <img src="images/graph01.jpeg" class="card-img-top img-fluid" alt="...">
+    <div class="card-body">
+      <h4 class="card-title cardTitle text-uppercase">balanço mensal</h4>
+      <p class="card-text">Balanço mensal para saber como foi os meses anteriores</p>
+    </div>
+    </div>
+    <div class="card scaleCardCont04" style="background-color: #3949A0;border: none; color: white;margin: 10px;">
+      <img src="images/graph02.jpeg" class="card-img-top img-fluid" alt="...">
+    <div class="card-body">
+      <h4 class="card-title cardTitle text-uppercase">estatística da empresa</h4>
+      <p class="card-text">Saiba como anda a evolução da sua empresa</p>
+    </div>
+    </div>
+    <div class="card scaleCardCont04" style="background-color: #3949A0;border: none; color: white;margin: 10px;">
+      <img src="images/graph03.jpeg" class="card-img-top img-fluid" alt="...">
+    <div class="card-body">
+      <h4 class="card-title cardTitle text-uppercase">personalização</h4>
+      <p class="card-text">Deixe o cabeçalho das suas O.S com a marca da sua empresa</p>
+    </div>
+    </div>
+  </div>
+
+</div>
+<br />
+<br />
+<br />
+<br />
+</div>
+<!-- CONTAINER 05-->
+<div class="container-fluid text-left" style="background-color: rgba(245,245,245,1);">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h4 class="text-uppercase" style="color:#3949A0;font-size: 16pt;">VALOR ACESSÍVEL</h4><br />
+        <h1 style="font-weight: 400;">UMA SOLUÇÃO<strong> QUE CABE NO SEU BOLSO</strong></h1>
+        <p>Por um valor mensal você terá uma hospedagem com domínio próprio e seu sistema rodando online.</p>
+        <br />
+        <div class="media p-2">
+    <i class="fa fa-info fa-4x mt-3" style="padding: 2px 30px;width:100px;color:#3949A0;"></i>
+    <div class="media-body">
+      <h4 style="font-size: 13pt;">DOMÍNIO PRÓPRIO COM NOME DA SUA EMPRESA</h4>
+      <p>Você leva seu sistema junto com a sua marca, criamos um domínio com o nome da sua empresa.</p>      
+    </div>
+  </div>
+  <div class="media p-2">
+    <i class="fa fa-hdd-o fa-3x mt-3" style="padding: 10px 15px;width:100px;color:#3949A0;"></i>
+    <div class="media-body">
+      <h4 style="font-size: 13pt;">HOSPEDAGEM</h4>
+      <p>Colocamos sua marca em uma hospedagem completa para armazenar seu banco de dados com segurança.</p>     
+    </div>
+  </div>
+  <div class="media p-2">
+    <i class="fa fa-history fa-3x mt-4" style="padding: 2px 20px;width:100px;color:#3949A0;"></i>
+    <div class="media-body">
+      <h4 style="font-size: 13pt;">SISTEMA ONLINE 24 HORAS POR DIA</h4>
+      <p>Use seu sistema de onde estiver acessando<br />com seu e-mail e senha.</p>     
+    </div>
+  </div>
+      </div>
+      <div class="col-sm-6">
+        <img src="images/mkp02.jfif" class="img-fluid float-right mt-5">
+        <br />
+      </div>
+    </div>
+  </div>
+</div>
+<br />
+<br />
+<!-- CONTAINER 06 -->
+<div class="container-fluid">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="container-fluid cont06 mb-5">
+              <h4 class="card-title cardCont3 h4Cont06">STANDARD</h4>
+              <p class="card-text text-center cardText pCont06">O que está incluso?</p>
+            <ul class="list-group list-group-flush text-center">
+                <li class="list-group-item" style="border-bottom: solid 1px silver;">SISTEMA DE ORDEM DE SERVIÇO</li>
+                <li class="list-group-item" style="border-bottom: solid 1px silver;">E-MAIL PROFISSIONAL</li>
+                <li class="list-group-item" style="border-bottom: solid 1px silver;">HOSPEDAGEM</li>
+                <li class="list-group-item" style="border-bottom: solid 1px silver;">DOMÍNIOS</li>
+                <li class="list-group-item" style="border-bottom: solid 1px silver;"><i class="fas fa-times"></i></li>
+                <li class="list-group-item" style="border-bottom: solid 1px silver;"><i class="fas fa-times"></i></li>
+                <li class="list-group-item" style="border-bottom: none;padding-bottom: 0;"><p style="font-size: 28pt;font-weight: 900;margin-bottom: 0;color:#3949A0;">R$ 260,00</p><p style="font-size: 14pt;margin-top: 0;color:#3949A0;">mensais</p></li>
+                <button type="button" class="btn btn-primary mr-auto ml-auto" style="font-size: 13pt;padding: 10px 40px;background-color:#3949A0;">PRECISO DESTE<i class="fas fa-check ml-2 fa-1x"></i></button>
+
+                
+            </ul>
+      </div>
+    </div>
+      <div class="col-sm-6">
+        <div class="container-fluid cont06 mb-5">
+              <h4 class="card-title cardCont3 h4Cont06">AVANÇADO</h4>
+              <p class="card-text text-center cardText pCont06">O que está incluso?</p>
+            <ul class="list-group list-group-flush text-center" >
+                <li class="list-group-item" style="border-bottom: solid 1px silver;">SISTEMA DE ORDEM DE SERVIÇO</li>
+                <li class="list-group-item" style="border-bottom: solid 1px silver;">E-MAIL PROFISSIONAL</li>
+                <li class="list-group-item" style="border-bottom: solid 1px silver;">HOSPEDAGEM</li>
+                <li class="list-group-item" style="border-bottom: solid 1px silver;">DOMÍNIOS</li>
+                <li class="list-group-item" style="border-bottom: solid 1px silver;">CONSULTORIA FINANCEIRA</li>
+                <li class="list-group-item" style="border-bottom: solid 1px silver;">DOCUMENTAÇÃO FINANCEIRA</li>
+                <li class="list-group-item" style="border-bottom: none;padding-bottom: 0;"><p style="font-size: 28pt;font-weight: 900;margin-bottom: 0;color:#3949A0;">R$ 390,00</p><p style="font-size: 14pt;margin-top: 0;color:#3949A0;">mensais</p></li>
+                <button type="button" class="btn btn-primary mr-auto ml-auto" style="font-size: 13pt;padding: 10px 40px;background-color:#3949A0;">PRECISO DESTE<i class="fas fa-check ml-2 fa-1x"></i></button>
+
+                
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br />
+<br />
+<!-- CONTAINER 07 -->
+<div id="recursos" class="container-fluid text-center cont07">
+  <div class="container">
+    <h4 class="text-uppercase" style="font-size: 12pt;">não perca a oportunidade</h4>
+    <h1 class="text-uppercase" style="font-size: 25pt; font-weight: 300;">entenda a<strong style="font-weight: 600;"> vantagem de ter o sistema</strong></h1>
+    <div style="border-bottom: solid 8px white;width: 100px;padding-top: 15px;" class="mr-auto ml-auto"></div>
+  </div>
+</div>
+<div class="container-fluid text-left cont08">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h4 class="text-uppercase" style="color:white;font-size: 16pt;">PORQUE TER O SISTEMA</h4>
+        <h1 style="font-weight: 400;"><strong>TOTAL CONTROLE</strong></h1>
+        <p>Um empresário de sucesso sabe que analisar a empresa é primordial, com um sistema de gestão fica tudo mais fácil.</p>
+        <br />
+        <div style="background-color: white;color: #3949A0;padding: 30px 30px;">
+        <ul class="listStyle">
+          <h4 class="text-uppercase" style="font-weight: 400;">Recursos Incríveis</h4>
+          
+          <li class="ml-3 text-left" style="background-color: transparent !important;font-weight: 400;"><i class="fa fa-check mr-2 ml-0 fa-sm"></i>Opção de enviar a ordem de serviço por e-mail ou whatsapp.</li>
+          <li class="ml-3 text-left" style="background-color: transparent !important;font-weight: 400;"><i class="fa fa-check mr-2 ml-0 fa-sm"></i>Gráficos diversos para analisar os ganhos e progresso da empresa.</li>
+          <li class="ml-3 text-left" style="background-color: transparent !important;font-weight: 400;"><i class="fa fa-check mr-2 ml-0 fa-sm"></i>Boleto integrado ao Gerencianet ou Mercado pago.</li>
+          <li class="ml-3 text-left" style="background-color: transparent !important;font-weight: 400;"><i class="fa fa-check mr-2 ml-0 fa-sm"></i>Opção de ser usado por vários usuários e permissões diferentes.</li>
+        </ul>
+        <br />
+        <ul class="listStyle">
+          <h4 class="text-uppercase" style="font-weight: 400;">DESIGN MODERNO E CRIATIVO</h4>
+          
+          <li class="ml-3 text-left" style="background-color: transparent !important;font-weight: 400;"><i class="fa fa-check mr-2 ml-0 fa-sm"></i>Menu ao lado que facilita.</li>
+          <li class="ml-3 text-left" style="background-color: transparent !important;font-weight: 400;"><i class="fa fa-check mr-2 ml-0 fa-sm"></i>Duas opções de tema do fundo: Branco ou Preto.</li>
+          <li class="ml-3 text-left" style="background-color: transparent !important;font-weight: 400;"><i class="fa fa-check mr-2 ml-0 fa-sm"></i>Logotipo nos relatórios e nas ordens de serviço.</li>
+        </ul>
+        <br />
+        <ul class="listStyle">
+          <h4 class="text-uppercase" style="font-weight: 400;">ATUALIZAÇÕES REGULARES</h4>
+
+          <li class="ml-3 text-left" style="background-color: transparent !important;font-weight: 400;"><i class="fa fa-check mr-2 ml-0 fa-sm"></i>Estamos em constante evolução e sempre criamos novidades.</li>
+        </ul>
+      </div>
+      </div>
+      <div class="col-sm-6">
+        <img src="images/mkp03.png" class="img-fluid float-right" width="450">
+        <br />
+      </div>
+    </div>
+  </div>
+</div>
+<!-- CONTAINER 08 -->
+<div id="sistema" class="container-fluid text-center" style="padding-bottom: 50px;">
+  <div class="container cont09">
+    <h4 class="text-uppercase" style="color:#3949A0;font-size: 14pt;font-weight: 600;padding-top: 40px;">O SISTEMA</h4>
+        <h1 style="font-weight: 400;"><strong>O QUE O SISTEMA TERÁ</strong></h1>
+        <div style="border-bottom: solid 8px #3949A0;width: 100px;padding-top: 15px;" class="mr-auto ml-auto"></div>
+  </div>
+  <br />
+  <div class="container">
+  <div class="w3-row-padding w3-margin-top">
+  <div class="w3-third">
+    <div class="w3-card scaleCardCont08">
+      <img src="images/sistema01.jpeg" style="width:100%">
+      <div class="w3-container" style="background-color: #2B3778;padding: 10px;">
+        <h5 class="p-1" style="font-size: 10pt;color: white;font-weight: 700;">RELATÓRIO DE CLIENTES</h5>
+        <h4 class="text-uppercase" style="font-size: 15pt;color: white;font-weight: 700;">Visualize tudo de forma prática</h4>
+        
+      </div>
+    </div>
+  </div>
+  <div class="w3-third">
+    <div class="w3-card scaleCardCont08">
+      <img src="images/sistema02.jpeg" style="width:100%">
+      <div class="w3-container" style="background-color: #2B3778;padding: 10px;">
+        <h5 class="p-1" style="font-size: 10pt;color: white;font-weight: 700;">RELATÓRIO DE ENTRADA E SAÍDA</h5>
+        <h4 class="text-uppercase" style="font-size: 15pt;color: white;font-weight: 700;">Entenda o que foi entrada e o que foi contas.</h4>
+        
+      </div>
+    </div>
+  </div>
+  <div class="w3-third">
+    <div class="w3-card scaleCardCont08">
+      <img src="images/sistema03.jpeg" style="width:100%">
+      <div class="w3-container" style="background-color: #2B3778;padding: 10px;">
+        <h5 class="p-1" style="font-size: 10pt;color: white;font-weight: 700;">USUÁRIOS</h5>
+        <h4 class="text-uppercase" style="font-size: 15pt;color: white;font-weight: 700;">COLOQUE USUÁRIOS COM PERMISSÕES LIMITADAS.</h4>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="w3-row-padding w3-margin-top">
+  <div class="w3-third">
+    <div class="w3-card scaleCardCont08">
+      <img src="images/sistema04.jpeg" style="width:100%">
+      <div class="w3-container" style="background-color: #2B3778;padding: 10px;">
+        <h5 class="p-1" style="font-size: 10pt;color: white;font-weight: 700;">ORDEM DE SERVIÇOS</h5>
+        <h4 class="text-uppercase" style="font-size: 15pt;color: white;font-weight: 700;">COLOQUE TODAS AS INFORMAÇÕES NECESSÁRIAS.</h4>
+        
+      </div>
+    </div>
+  </div>
+  <div class="w3-third">
+    <div class="w3-card scaleCardCont08">
+      <img src="images/sistema05.jpeg" style="width:100%">
+      <div class="w3-container" style="background-color: #2B3778;padding: 10px;">
+        <h5 class="p-1" style="font-size: 10pt;color: white;font-weight: 700;">CONTROLE DE INFORMAÇÕES DO SERVIÇO</h5>
+        <h4 class="text-uppercase" style="font-size: 15pt;color: white;font-weight: 700;">INSIRA OBSERVAÇÕES DETALHADAS DO SERVIÇO.</h4>
+        
+      </div>
+    </div>
+  </div>
+  <div class="w3-third">
+    <div class="w3-card scaleCardCont08">
+      <img src="images/sistema06.jpeg" style="width:100%">
+      <div class="w3-container" style="background-color: #2B3778;padding: 10px;">
+        <h5 class="p-1" style="font-size: 10pt;color: white;font-weight: 700;">RELATÓRIOS INICIAIS</h5>
+        <h4 class="text-uppercase" style="font-size: 15pt;color: white;font-weight: 700;">NA DASHBORD JÁ VISUALIZE VÁRIOS DADOS.</h4>
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!-- CONTAINER 09 -->
+<div id="contato" class="container-fluid text-center contForm">
+  <div class="container">
+    <h4 class="text-uppercase" style="color:white;font-size: 12pt;font-weight: 300;padding-top: 40px;">contate-nos</h4>
+        <h1 style="font-weight: 400;"><strong>TIRE SUAS DÚVIDAS</strong></h1>
+        <div style="border-bottom: solid 8px white;width: 100px;padding-top: 15px;" class="mr-auto ml-auto"></div>
+  </div>
+  <br />
+  <div class="container p-4">
+    <h2 class="text-center" style="padding: 100px;border: 2px solid white;border-radius: 5px;">
+      FORMULÁRIO
+    </h2>
+  </div>
+</div>
+<!-- FOOTER -->
+<footer class="container-fluid p-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <p class="text-center">&COPY; 2021 Todos os direitos reservados - Elig Adm - Soluções Administrativas.</p>
+      </div> 
+      <div class="col-sm-4 text-center">
+        <i class="fa fa-instagram mr-2 ml-2 fa-lg"></i>
+        <i class="fa fa-facebook mr-2 ml-2 fa-lg"></i>
+        <i class="fa fa-whatsapp mr-2 ml-2 fa-lg"></i>
+      </div> 
+    </div>
+  </div>
+</footer>
+<a href="#top">
+    <div class="backtotop"><i class="fa fa-angle-up" style="font-weight: 900; font-size: 20pt;color: white;"></i>
+    </div></a>
+<!-- SCRIPTS -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>           
